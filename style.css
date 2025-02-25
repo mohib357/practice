@@ -1,0 +1,37 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.food {
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.food img{
+    width: 100%;
+}
+
+
+
+
+
+
+/* responsiv for moble */
+@media screen and (max-width: 576px) {
+    .conteiner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food{background-color: aquamarine;}
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .conteiner{
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(156, 20, 88);
+    }
+    .food{
+        border-radius: 30px;
+        border: 3px dotted rgb(202, 227, 13);
+    }
+}
