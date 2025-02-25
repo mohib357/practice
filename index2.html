@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make a website responsive</title>
+
+    <style>
+        body {
+            border: 2px solid red;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .image-conteiner{
+            display: flex;
+        }
+        .image-conteiner div{
+            width: 50%;
+        }
+        .image-conteiner img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .image-conteiner{
+                flex-direction: column-reverse;
+            }
+            .image-conteiner div{
+                width: 100%;
+            }            
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+        <ol>
+            <li>Viewport mate tag</li>
+            <li>Css Relative unit</li>
+            <li>body max width and horizontal center align</li>
+            <li>Image fluid</li>
+            <li>two column flex and use medea query with flex direction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu responsiv: will need java script</li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-conteiner">
+            <div>
+                <img src="image/home.jpg" alt="">
+            </div>
+            <div>
+                <img src="image/IMG_20170416_105712.jpg" alt="">
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
