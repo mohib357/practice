@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-9 practice 2</title>
+
+
+
+    <style>
+        span{
+            background-color: aliceblue;
+            padding: 5px;
+            color: black;
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 2em;        
+        }
+        .box-conteiner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 300px;
+            gap: 5px;
+        }
+        .box1{
+            background-color: red;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-box-conteiner{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .box2{
+            background-color: orange;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-bottom-box-conteiner{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 50%;
+            gap: 5px;
+        }
+        .box3{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box4{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 576px) {
+            .box-conteiner{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .right-bottom-box-conteiner{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .box1, .box2, .box3, .box4{
+               height: 150px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="box-conteiner">
+        <div class="box1"><span>box1</span></div>
+        <div class="right-box-conteiner">
+            <div class="box2"><span>box2</span></div>
+            <div class="right-bottom-box-conteiner">
+                <div class="box3"><span>box3</span></div>
+                <div class="box4"><span>box4</span></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
