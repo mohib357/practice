@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 5px 20px;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        .box-conteiner{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            height: 500px;
+        }
+        .box1, .box2{
+            height: 90%;
+            padding: 10px;
+            border-radius: 20px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            background-color: rgb(238, 232, 232);
+            width: 25%;
+        }
+        .box2{
+            background-color: rgb(201, 240, 227);
+            width: 75%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .box-conteiner{
+            flex-direction: column;
+            width: 100%;
+            gap: 5px;
+        }
+        .box1, .box2{
+            width: 100%;
+            padding: 5px;
+        }
+        .box1{
+            background-color: rgb(238, 232, 232);
+            height: 25%;
+        }
+        .box2{
+            background-color: rgb(201, 240, 227);
+            height: 75%;
+        }
+        
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box-conteiner">
+        <div class="box1">left</div>
+        <div class="box2">right</div>
+    </div>
+
+</body>
+
+</html>
